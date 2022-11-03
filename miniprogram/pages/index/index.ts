@@ -12,11 +12,34 @@ Page({
     canIUseOpenData: wx.canIUse('open-data.type.userAvatarUrl') && wx.canIUse('open-data.type.userNickName') // 如需尝试获取用户信息可改为false
   },
   // 事件处理函数
-  bindViewTap() {
-    wx.navigateTo({
-      url: '../logs/logs',
-    })
+  jump_to_weixu(){
+    
+      wx.navigateTo({
+        url: '/pages/weixiu/weixiu',
+      })
+    
   },
+  jump_to_swzl(){
+    
+    wx.navigateTo({
+      url: '/pages/swzl/swzl',
+    })
+  
+},
+jump_to_chongdian(){
+    
+  wx.navigateTo({
+    url: '/pages/chongdian/chongdian',
+  })
+
+},
+jump_to_tsjy(){
+    
+  wx.navigateTo({
+    url: '/pages/tsjy/tsjy',
+  })
+
+},
   onLoad() {
     // @ts-ignore
     if (wx.getUserProfile) {
