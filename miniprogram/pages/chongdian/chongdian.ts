@@ -4,8 +4,18 @@ Page({
   /**
    * 页面的初始数据
    */
+    /**
+   * 页面的初始数据
+   */
   data: {
-
+    activeIndex: 0, //默认选中第一个
+    numArray: [20, 30, 50, 80, 100,'m']
+  },
+  activethis: function (event) { //点击选中事件
+    var thisindex = event.currentTarget.dataset.thisindex; //当前index
+    this.setData({
+      activeIndex: thisindex
+    })
   },
 
   /**

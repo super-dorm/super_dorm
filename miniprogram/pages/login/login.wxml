@@ -1,0 +1,23 @@
+<!--pages/login/login.wxml-->
+<view class="page-body">
+
+
+  <view class="page-section">
+    <view class="page-section-title">角色选择</view>
+    <view class="weui-cells weui-cells_after-title">
+      <radio-group bindchange="radioChange">
+        <label class="weui-cell weui-check__label" wx:for="{{items}}" wx:key="{{item.value}}">
+
+          <view class="weui-cell__hd">
+            <radio value="{{item.value}}" checked="true"/>
+          </view>
+          <view class="weui-cell__bd">{{item.name}}</view>
+        </label>
+      </radio-group>
+    </view>
+  </view>
+
+  <view>
+    <button class="button" bindtap='login'>确认登陆</button>
+  </view>
+</view>

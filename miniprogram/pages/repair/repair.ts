@@ -1,19 +1,6 @@
-// pages/swzl/swzl.ts
+// pages/repair/repair.ts
 Page({
-  jump_to_fabu(){
-    
-    wx.navigateTo({
-      url: '/pages/swzl/fabu',
-    })
-  
-},
-jump_to_chakan(){
-    
-  wx.navigateTo({
-    url: '/pages/swzl/chakan',
-  })
 
-},
   /**
    * 页面的初始数据
    */

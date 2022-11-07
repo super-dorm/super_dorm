@@ -1,4 +1,4 @@
-// pages/weixiu/weixiu.ts
+// pages/swzl/fabu.ts
 Page({
 
   /**

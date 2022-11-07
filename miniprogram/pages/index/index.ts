@@ -15,7 +15,7 @@ Page({
   jump_to_weixu(){
     
       wx.navigateTo({
-        url: '/pages/weixiu/weixiu',
+        url: '/pages/repair/repair',
       })
     
   },

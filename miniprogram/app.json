@@ -1,11 +1,16 @@
 {
   "pages": [
+   
     "pages/index/index",
     "pages/wode/wode",
-    "pages/weixiu/weixiu",
     "pages/swzl/swzl",
     "pages/tsjy/tsjy",
-    "pages/chongdian/chongdian"
+    "pages/chongdian/chongdian",
+    "pages/repair/repair",
+    "pages/swzl/fabu",
+    "pages/login/login",
+    "pages/swzl/chakan"
+    
   ],
   "window": {
     "backgroundTextStyle": "light",
