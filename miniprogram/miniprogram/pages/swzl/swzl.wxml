@@ -1,0 +1,26 @@
+<!--pages/swzl/swzl.wxml-->
+
+<text>\n</text>
+<text>\n</text>
+<text>\n</text>
+<text>\n</text>
+<text>\n</text>
+<text>\n</text><text>\n</text>
+<text>\n</text><text>\n</text>
+<text>\n</text><text>\n</text>
+
+<view class="view_class">
+  <button class="button" bindtap='jump_to_fabu'>
+  <image class='btnImg' src='../../images/发布.png'></image>
+  <view>
+  发布
+  </view>
+</button>
+<button class="button" bindtap='jump_to_chakan'>
+  <image class='btnImg' src='../../images/查看.png'></image>
+  <view>
+    查看
+  </view>
+
+</button>
+</view>

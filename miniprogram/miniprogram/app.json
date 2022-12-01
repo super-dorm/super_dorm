@@ -1,0 +1,35 @@
+{
+  "pages": [
+    "pages/login/login",
+    "pages/index/index",
+    "pages/wode/wode",
+    "pages/swzl/swzl",
+    "pages/tsjy/tsjy",
+    "pages/chongdian/chongdian",
+    "pages/repair/repair",
+    "pages/swzl/fabu",
+    "pages/swzl/chakan",
+    "pages/ayi/chuli",
+    "pages/repair/for_service"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#2596be",
+    "navigationBarTitleText": "智能宿舍",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "服务"
+      },
+      {
+        "pagePath": "pages/wode/wode",
+        "text": "我的"
+      }
+    ]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}
