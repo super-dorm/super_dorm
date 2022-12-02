@@ -1,0 +1,17 @@
+<!--pages/chongdian/chuli.wxml-->
+<view class="view_class">
+  <button class="button" bindtap='jump_to_chongdian'>
+  <image class='btnImg' src='../../images/充电.png'></image>
+  <view>
+    充电
+  </view>
+
+</button>
+<button class="button" bindtap='jump_to_swzl'>
+  <image class='btnImg' src='../../images/失物招领.png'></image>
+  <view>
+    失物招领
+  </view>
+
+</button>
+</view>

@@ -1,0 +1,24 @@
+/* pages/swzl/swzl.wxss */
+.button {
+  width: 200rpx;
+  height: 200rpx;
+  margin-top: 20rpx;
+  background-color: white;
+  color: cornflowerblue;
+  border-radius: 0rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 30rpx;
+
+}
+.view_class {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.btnImg {
+  width: 50rpx;
+  height: 50rpx;
+}

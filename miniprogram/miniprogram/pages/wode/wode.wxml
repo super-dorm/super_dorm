@@ -1,0 +1,25 @@
+<!--logs.wxml-->
+<button class='btn1' open-type='contact'>
+    <image class='btnImg' src='../../images/工具.png'></image>
+    <view>我的报修</view>
+ </button>
+
+<button class='btn1' open-type='contact'>
+    <image class='btnImg' src='../../images/失物招领.png'></image>
+    <view>我的失物招领</view>
+ </button>
+
+  <button class='btn2' open-type='openSetting'>
+    <image class='btnImg' src='../../images/充电.png'></image>
+    <view>我的充电</view>
+ </button>
+
+ <button class='btn2' open-type='openSetting'>
+    <image class='btnImg' src='../../images/客服.png'></image>
+    <view>我的投诉与建议</view>
+ </button>
+
+ <button class='btn2' open-type='openSetting'>
+    <image class='btnImg' src='../../images/账号信息-修改.png'></image>
+    <view>信息修改</view>
+ </button>
