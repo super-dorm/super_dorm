@@ -1,5 +1,11 @@
 // pages/repair/repair.ts
+wx.cloud.init({
+  env: 'super-dorm-1gb9g5xp7878f883', //填写云开发环境id
+  traceUser: true,
+})
+const db = wx.cloud.database()
 Page({
+   
 
   /**
    * 页面的初始数据
@@ -21,7 +27,7 @@ Page({
   onReady() {
 
   },
-
+ 
   /**
    * 生命周期函数--监听页面显示
    */
@@ -62,5 +68,44 @@ Page({
    */
   onShareAppMessage() {
 
-  }
+  } ,
+   /** 跳转到首页页面 */
+   jumpToDetail() {
+    wx.showModal({
+        title: '提示',
+        content: '是否确认提交',
+        success: function (res) {
+            if (res.confirm) {
+                console.log('用户点击确定')
+                wx.showToast({
+                    title: '成功',
+                    duration: 1000,
+                    success: function () {
+                    setTimeout(function () {
+                    wx.navigateBack({//提交成功后跳转到上一界面
+                    
+                      })
+                    }, 1000);
+                 }
+               })
+                                                        
+            }else{
+               console.log('用户点击取消')
+            }
+
+        }
+    })
+},
+  
+  submit(res:any){  //提交事件函数
+
+    console.log(res)
+    var formData=res.detail.value; //表单数据存放于res.detail.value中
+    db.collection("Repair_Task").add({     //向“Repair_Task”表中添加数据
+      data:formData 
+    }).then(addRes=>{
+      console.log(addRes)
+    })
+
+    }
 })
