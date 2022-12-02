@@ -1,4 +1,5 @@
 // app.ts
+
 App<IAppOption>({
   globalData: {},
   onLaunch() {
@@ -13,6 +14,7 @@ App<IAppOption>({
         console.log(res.code)
         // 发送 res.code 到后台换取 openId, sessionKey, unionId
       },
+      
     })
   },
 })
