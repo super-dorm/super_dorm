@@ -6932,6 +6932,7 @@ wx.createSelectorQuery()
         success?: ShowActionSheetSuccessCallback
     }
     interface ShowActionSheetSuccessCallbackResult {
+        cancel: boolean | void
         /** 用户点击的按钮序号，从上到下的顺序，从0开始 */
         tapIndex: number
         errMsg: string

@@ -11,7 +11,7 @@
 <text>\n</text><text>\n</text>
 
 <radio-group bindchange="radioChange">
-  <label class="weui-cell weui-check__label" wx:for="{{items}}" wx:key="{{item.value}}">
+  <label class="weui-cell weui-check__label" wx:for="{{items}}" wx:key="value">
 
     <view class="weui-cell__hd">
       <radio value="{{item.value}}" checked="true" />
@@ -23,6 +23,8 @@
 
 <text>\n</text><text>\n</text>
 <text>\n</text><text>\n</text>
-<view>
-  <button class="button" bindtap='login'>确认登陆</button>
+<view style="position: relative; left: 0rpx; top: -127rpx">
+  <button class="button" bindtap='login' style="position: relative; left: 0rpx; top: 278rpx">确认登陆</button>
+
+  <input  placeholder="请输入姓名" />
 </view>

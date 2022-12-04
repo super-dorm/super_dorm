@@ -1,5 +1,8 @@
 // pages/tsjy/tsjy.ts
+
+const db = wx.cloud.database()
 Page({
+   
 
   /**
    * 页面的初始数据
@@ -21,7 +24,7 @@ Page({
   onReady() {
 
   },
-
+ 
   /**
    * 生命周期函数--监听页面显示
    */
@@ -62,5 +65,38 @@ Page({
    */
   onShareAppMessage() {
 
-  }
+  } ,
+  btnSub(res:any){
+    // 表单提交
+    wx.showLoading({
+      title: '数据加载中',
+      mask:true
+    })
+    //老方法获取所有值
+    // var title=res.detail.value.title;
+    // var author=res.detail.value.author;
+    // var content=res.detail.value.content;
+ 
+    //es6结构方法获取所有值（简易，推荐使用）
+    var {title,content}=res.detail.value;
+    var resVlu=res.detail.value;
+    db.collection("tsjy").add({
+      data:
+       resVlu
+      
+      // data:{ // 老方法赋值
+      //   title:title,
+      //   author:author,
+      //   content:content
+      // }
+    }).then(res=>{
+      console.log(res)
+      wx.showToast({
+         title: '提交成功',
+         icon: 'none',
+         duration: 1500
+       })
+      wx.hideLoading()
+    })
+  },
 })

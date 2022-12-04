@@ -23,7 +23,7 @@
   },
   "include": [
     "./**/*.ts"
-  ],
+, "miniprogram/pages/swzl/fabu.ts"  ],
   "exclude": [
     "node_modules"
   ]

@@ -2,12 +2,12 @@
 <view class="bgView flexStandard">
   <view class="titleBox">
     <view class="titleView"><text class="title">钱包余额</text></view>
-    <view><text class="num">0.00</text></view>
+    <view><text class="num">{{sumMoney}}</text></view>
   </view>
 </view>
  
 <view class="czhiView flexVertical">
-  <text>充值金额</text>
+  <text>充值到钱包金额</text>
 </view>
  
  
@@ -23,8 +23,15 @@
   </view>
 </view>
  
-<view class="czhiBox flexStandard">
-  <view class="btnczhi flexCenten">
-    <text>立即充值</text>
-  </view>
-</view>
+<view><button bindtap="chargeMoney">立即充值</button></view>
+
+
+
+
+    <view class="weui-cells__title">充值电费金额</view>
+
+  <form bindsubmit="btnSub">
+    <input class="input" name="DormNum" placeholder="请输入宿舍号"></input>
+    <textarea class="input" name="Amount" placeholder="请输入充值金额"></textarea>
+    <button type="primary" form-type="submit">提交</button>
+</form>
