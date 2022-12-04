@@ -1,0 +1,18 @@
+/* pages/swzl/fabu.wxss */
+.page-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.btn-area{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.weui-input{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}

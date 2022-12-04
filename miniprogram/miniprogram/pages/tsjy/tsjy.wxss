@@ -1,0 +1,7 @@
+/* pages/tsjy/tsjy.wxss */
+.page-section-title{color: cornflowerblue;}
+.weui-input{
+  height: 100px;
+
+}
+

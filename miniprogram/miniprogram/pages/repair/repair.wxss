@@ -1,0 +1,4 @@
+/* pages/repair/repair.wxss */
+.page-section-title{
+  color: cornflowerblue;
+}

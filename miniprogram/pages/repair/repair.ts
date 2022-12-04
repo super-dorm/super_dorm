@@ -1,7 +1,14 @@
 // pages/repair/repair.ts
+<<<<<<< HEAD
 
 import { formatTime } from "../../utils/util"
 
+=======
+wx.cloud.init({
+  env: 'super-dorm-1gb9g5xp7878f883', //填写云开发环境id
+  traceUser: true,
+})
+>>>>>>> 51238cadc0500f3e2a31f87ea79cc67dd28a4103
 const db = wx.cloud.database()
 Page({
    
@@ -97,6 +104,7 @@ Page({
 },
   
   submit(res:any){  //提交事件函数
+<<<<<<< HEAD
     const d = new Date();
     let time = d.getTime();
     console.log(res)
@@ -107,6 +115,13 @@ Page({
         time:formatTime(d),
         TaskState:"未接单"
       } 
+=======
+
+    console.log(res)
+    var formData=res.detail.value; //表单数据存放于res.detail.value中
+    db.collection("Repair_Task").add({     //向“Repair_Task”表中添加数据
+      data:formData 
+>>>>>>> 51238cadc0500f3e2a31f87ea79cc67dd28a4103
     }).then(addRes=>{
       console.log(addRes)
     })

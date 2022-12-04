@@ -8,9 +8,15 @@
 
   <view class="report-pic-item" wx:for="{{previewArr}}" wx:key="*this">
     <image src="{{item}}"></image>
+<<<<<<< HEAD
     <!-- <view class="pic-item-close" data-pic="{{item}}" bindtap="delReportPic">
       <image src="../../images/叉叉.png"></image>
     </view> -->
+=======
+    <view class="pic-item-close" data-pic="{{item}}" bindtap="delReportPic">
+      <image src="../../images/叉叉.png"></image>
+    </view>
+>>>>>>> 51238cadc0500f3e2a31f87ea79cc67dd28a4103
   </view>
 
   <view class="report-pic-item" bindtap="chooseClientPic">

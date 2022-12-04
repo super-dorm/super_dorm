@@ -1,0 +1,25 @@
+<!--pages/swzl/fabu.wxml-->
+<view class="container">
+  <text>发布失物招领</text>
+  <image class="image" src="{{imgPath}}" mode='scaleToFill' bindtap="previewImg"></image>
+  <button bindtap="selectImg">选择图片</button>
+<button bindtap="loadImg">上传图片</button>
+
+</view>
+<view class="page-section">
+      <view class="page-section-title">描述</view>
+      <text>\n</text>
+      <view class="weui-cells weui-cells_after-title">
+        <view class="weui-cell weui-cell_input">
+          <view class="weui-cell__bd" style="margin: 30rpx 0">
+            <input class="weui-input" name="input" placeholder="具体" />
+          </view>
+        </view>
+      </view>
+    </view>
+    <text>\n</text>
+
+    <view class="btn-area">
+      <button style="margin: 30rpx 0" type="primary" formType="submit">Submit</button>
+     
+    </view>
