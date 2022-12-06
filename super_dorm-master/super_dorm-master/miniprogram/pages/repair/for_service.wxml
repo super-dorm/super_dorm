@@ -1,0 +1,15 @@
+<!--pages/repair/for_service.wxml-->
+<view class="view_class">
+  <button class="button" bindtap='jump_to_weixu'>
+  <image class='btnImg' src='../../images/工具.png'></image>
+  <view>
+  待维修
+  </view>
+</button>
+<button class="button" bindtap='jump_to_weixu'>
+  <image class='btnImg' src='../../images/工具.png'></image>
+  <view>
+  已维修
+  </view>
+</button>
+</view>

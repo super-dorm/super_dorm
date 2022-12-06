@@ -1,0 +1,61 @@
+/* pages/swzl/fabu.wxss */
+.page-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.btn-area{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.weui-input{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.supplement-report-pic{
+  width: 100%;
+  margin: 0rpx auto;
+  padding: 10% 0%;
+}
+.report-pic-item{
+  width: calc(33.33% - 10rpx);
+  float: left;
+  margin: 0rpx 0rpx 5rpx 0rpx;
+  position: relative;
+}
+.report-pic-item:nth-child(2),.report-pic-item:nth-child(5),.report-pic-item:nth-child(8){
+  margin: 0rpx 15rpx 5rpx 15rpx;
+}
+.report-pic-item>image{
+  width: 100%;
+  position: relative;
+  height: 150rpx;
+}
+.pic-item-close{
+  position: absolute;
+  right: 5rpx;
+  top: 5rpx;
+}
+.pic-item-close image{
+  width: 46rpx;
+  height: 46rpx;
+}
+.supplement-report-operat{
+  width: 90%;
+  margin: 0rpx auto;
+}
+.supplement-report-operat button{
+  font-size: 32rpx;
+  margin: 0rpx 0rpx 15rpx 0rpx;
+  text-align: center;
+  
+}
+.supplement-report-operat view{
+  position:absolute;
+  font-size: 28rpx;
+  color: rgba(185, 186, 187, 1);
+}

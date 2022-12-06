@@ -1,0 +1,52 @@
+<!--pages/repair/repair.wxml-->
+<form bindsubmit="submit">
+<view class="container">
+  <view class="page-body">
+    <view class="page-section page-section-gap">
+      <view class="page-section-title">维修种类</view>
+      <text>\n</text>
+      <text>\n</text>
+      <checkbox-group name="checkbox">
+        <label>
+          <checkbox value="checkbox1" />电器
+        </label>
+        
+        <label>
+          <checkbox value="checkbox2" />其他
+        </label>
+      </checkbox-group>
+    </view>
+    <text>\n</text>
+<text>\n</text>
+<text>\n</text>
+<view class="page-section">
+      <view class="page-section-title">宿舍号</view>
+      <view class="weui-cells weui-cells_after-title">
+        <view class="weui-cell weui-cell_input">
+          <view class="weui-cell__bd" style="margin: 30rpx 0">
+            <input class="weui-input" name="DormitoryNumber" placeholder="填写宿舍号（42-211）" />
+          </view>
+        </view>
+      </view>
+    </view>
+    <text>\n</text>
+    <view class="page-section">
+      <view class="page-section-title">描述</view>
+      <view class="weui-cells weui-cells_after-title">
+        <view class="weui-cell weui-cell_input">
+          <view class="weui-cell__bd" style="margin: 30rpx 0">
+            <input class="weui-input" name="TaskContent" placeholder="填写具体描述" />
+          </view>
+        </view>
+      </view>
+    </view>
+    <text>\n</text>
+
+    <view class="btn-area">
+      <button   bindtap='jumpToDetail' style="margin: 30rpx 0" type="primary" form-type="submit">Submit</button>
+     
+    </view>
+
+  </view>
+
+</view></form>

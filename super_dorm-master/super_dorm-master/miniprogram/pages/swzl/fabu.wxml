@@ -1,0 +1,43 @@
+<!--pages/swzl/fabu.wxml-->
+<form bindsubmit="submit">
+  <view class="container">
+  <text>发布失物招领</text>
+
+
+<view class="supplement-report-pic">
+
+  <view class="report-pic-item" wx:for="{{previewArr}}" wx:key="*this">
+    <image src="{{item}}"></image>
+    <view class="pic-item-close" data-pic="{{item}}" bindtap="delReportPic">
+      <image src="../../images/叉叉.png"></image>
+    </view>
+  </view>
+
+  <view class="report-pic-item" bindtap="chooseClientPic">
+    <image src="../../images/shangchuan.png"></image>
+  </view>
+
+  <view class="clearfix"></view>
+</view>
+
+<view class="page-section">
+      <view class="page-section-title">描述</view>
+      <text>\n</text>
+      <view class="weui-cells weui-cells_after-title">
+        <view class="weui-cell weui-cell_input">
+          <view class="weui-cell__bd" style="margin: 30rpx 0">
+            <input class="weui-input" name="ItemDesciption" placeholder="具体" />
+          </view>
+        </view>
+      </view>
+</view>
+
+    <text>\n</text>
+
+<view class="supplement-report-operat" >
+  <button bindtap="jumpToDetail"form-type="submit" >确定发布</button>
+</view>
+
+</view></form>
+
+

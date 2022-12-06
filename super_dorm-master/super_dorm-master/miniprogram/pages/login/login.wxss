@@ -1,0 +1,23 @@
+/* pages/login/login.wxss */
+.page-section-title{
+  color: cornflowerblue;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.weui-cell__hd{
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  font-size: 30rpx;
+}
+
+.weui-cell__bd{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  font-size: 30rpx;
+}
