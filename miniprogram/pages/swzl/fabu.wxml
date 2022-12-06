@@ -34,9 +34,8 @@
 
     <text>\n</text>
 
-<view class="supplement-report-operat">
-  <button form-type="submit"
-  bindtap="uploadReportPic">确定发布</button>
+<view class="supplement-report-operat" >
+  <button bindtap="jumpToDetail"form-type="submit" >确定发布</button>
 </view>
 
 </view></form>
