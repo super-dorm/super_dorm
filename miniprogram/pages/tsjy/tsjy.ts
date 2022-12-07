@@ -1,8 +1,5 @@
 // pages/tsjy/tsjy.ts
-
-const db = wx.cloud.database()
 Page({
-   
 
   /**
    * 页面的初始数据
@@ -10,93 +7,45 @@ Page({
   data: {
 
   },
-
-  /**
-   * 生命周期函数--监听页面加载
-   */
-  onLoad() {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面初次渲染完成
-   */
-  onReady() {
-
-  },
- 
-  /**
-   * 生命周期函数--监听页面显示
-   */
-  onShow() {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面隐藏
-   */
-  onHide() {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面卸载
-   */
-  onUnload() {
-
-  },
-
-  /**
-   * 页面相关事件处理函数--监听用户下拉动作
-   */
-  onPullDownRefresh() {
-
-  },
-
-  /**
-   * 页面上拉触底事件的处理函数
-   */
-  onReachBottom() {
-
-  },
-
-  /**
-   * 用户点击右上角分享
-   */
-  onShareAppMessage() {
-
-  } ,
-  btnSub(res:any){
-    // 表单提交
-    wx.showLoading({
-      title: '数据加载中',
-      mask:true
-    })
-    //老方法获取所有值
-    // var title=res.detail.value.title;
-    // var author=res.detail.value.author;
-    // var content=res.detail.value.content;
- 
-    //es6结构方法获取所有值（简易，推荐使用）
-    var {title,content}=res.detail.value;
-    var resVlu=res.detail.value;
-    db.collection("tsjy").add({
-      data:
-       resVlu
+  tsSubmit(res:any){
+    wx.cloud.init({
+        env: 'super-dorm-1gb9g5xp7878f883', //填写云开发环境id
+        traceUser: true,
+      })
+      const db = wx.cloud.database()
       
-      // data:{ // 老方法赋值
-      //   title:title,
-      //   author:author,
-      //   content:content
-      // }
-    }).then(res=>{
-      console.log(res)
-      wx.showToast({
-         title: '提交成功',
-         icon: 'none',
-         duration: 1500
-       })
-      wx.hideLoading()
-    })
-  },
-})
+        var formData=res.detail.value; //表单数据存放于res.detail.value中
+        db.collection("tsjy").add({     //向“Repair_Task”表中添加数据
+          data:formData 
+        }).then(addRes=>{
+          console.log(addRes)
+        })
+    
+        },
+     jumpToDetail() {
+          wx.showModal({
+              title: '提示',
+              content: '是否确认提交',
+              success: function (res) {
+                  if (res.confirm) {
+                      console.log('用户点击确定')
+                      wx.showToast({
+                          title: '成功',
+                          duration: 1000,
+                          success: function () {
+                          setTimeout(function () {
+                          wx.navigateBack({//提交成功后跳转到上一界面
+                          
+                            })
+                          }, 1000);
+                       }
+                     })
+                                                              
+                  }else{
+                     console.log('用户点击取消')
+                  }
+      
+              }
+          })
+      }
+  })

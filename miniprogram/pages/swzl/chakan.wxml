@@ -1,7 +1,6 @@
-<view wx:for="{{description}}" >
-  {{index}}: {{item.ItemDesciption}}
-     <!-- <image src="{{item.img_url}}"></image> 
+<view wx:for="{{projects}}" wx:for-item='item'>
+     <image src="{{item.img_url}}"></image> 
      <!-- 失物招领图片 -->
       <text class="cont_">{{item.input}}</text>
-       -->
+      
     </view>

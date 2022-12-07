@@ -1,5 +1,5 @@
 /* pages/tsjy/tsjy.wxss */
-.input{color: cornflowerblue;}
+.page-section-title{color: cornflowerblue;}
 .weui-input{
   height: 100px;
 

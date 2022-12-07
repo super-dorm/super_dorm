@@ -10,8 +10,7 @@
     "pages/swzl/fabu",
     "pages/swzl/chakan",
     "pages/ayi/chuli",
-    "pages/repair/for_service",
-    "pages/ayi/chongdianchuli"
+    "pages/repair/for_service"
   ],
   "window": {
     "backgroundTextStyle": "light",

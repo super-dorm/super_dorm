@@ -7,18 +7,7 @@ Page({
   data: {
 
   },
-  jump_to_swzl(){
-    
-    wx.navigateTo({
-      url: '/pages/swzl/swzl',
-    })
-  
-},
-jump_to_chongdian(){
-  wx.navigateTo({
-    url: '/pages/ayi/chongdianchuli',
-  })
-},
+
   /**
    * 生命周期函数--监听页面加载
    */
