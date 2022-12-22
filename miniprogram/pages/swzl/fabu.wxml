@@ -1,0 +1,43 @@
+<!--pages/swzl/fabu.wxml-->
+<form bindsubmit="submit">
+  <view class="container">
+  <text style="position: relative; left: 2rpx; top: -86rpx">发布失物招领</text>
+
+
+<view class="supplement-report-pic">
+
+  <view class="report-pic-item" wx:for="{{previewArr}}" wx:key="*this">
+    <image src="{{item}}"></image>
+    <view class="pic-item-close" data-pic="{{item}}" bindtap="delReportPic">
+      <image src="../../images/叉叉.png"></image>
+    </view>
+  </view>
+
+  <view class="report-pic-item" bindtap="chooseClientPic">
+    <image src="../../images/shangchuan.png" style="width: 140rpx; height: 127rpx; display: inline-block; box-sizing: border-box; left: 534rpx; top: 328rpx; position: relative"></image>
+  </view>
+
+  <view class="clearfix"></view>
+</view>
+
+<view class="page-section" style="position: relative; left: 3rpx; top: 333rpx; width: 518rpx; height: 92rpx; display: flex; box-sizing: border-box">
+      <view class="page-section-title">描述</view>
+      <text>\n</text>
+      <view class="weui-cells weui-cells_after-title" style="position: relative; left: 0rpx; top: 92rpx; width: 356rpx; height: 158rpx; display: block; box-sizing: border-box">
+        <view class="weui-cell weui-cell_input">
+          <view class="weui-cell__bd" style="margin: 30rpx 0">
+            <input class="weui-input" name="ItemDesciption" placeholder="具体" />
+          </view>
+        </view>
+      </view>
+</view>
+
+    <text>\n</text>
+
+<view class="supplement-report-operat"  style="position: relative; left: 2rpx; top: 164rpx">
+  <button bindtap="jumpToDetail"form-type="submit"  style="position: relative; left: 154rpx; top: 356rpx">确定发布</button>
+</view>
+
+</view></form>
+
+

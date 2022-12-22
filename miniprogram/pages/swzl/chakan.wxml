@@ -1,0 +1,17 @@
+<view wx:for="{{description}}" wx:for-item="item" class="list">
+<view>
+   {{index}}: {{item.state}}
+</view>
+<view>
+  {{item.ItemDesciption}}
+</view>
+ <view wx:for="{{item.uploadId}}">
+   <image src="{{item}}" class="image" />
+     <!-- 失物招领图片 -->
+ </view>
+<view class="time">
+  发布时间：{{item.time}}
+</view>
+   
+   
+    </view>

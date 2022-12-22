@@ -1,0 +1,14 @@
+.list{
+  border-bottom: 1rpx solid rgb(68,209,139);
+  padding: 10rpx 20rpx;
+}
+
+.image{
+  width: 150rpx;
+  height: 150rpx;
+  margin: 5rpx 5rpx 5rpx 5rpx;
+}
+
+.time{
+  font-size: xx-small;
+}

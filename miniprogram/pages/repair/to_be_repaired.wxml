@@ -1,0 +1,27 @@
+<view wx:for="{{to_be_repaired}}" wx:for-item="item" class="list">
+
+<view>
+   {{index}}: {{item.State}}
+</view>
+<view class="aaa"  >
+ <text class="time">订单详情：</text>  
+ <view><view>
+    宿舍号：{{item.formData.DormitoryNumber}}
+ </view>
+ <view>
+   时间：{{item.time}}
+ </view>
+</view> 
+ 
+</view>
+<view class="time">
+  维修内容：{{item.formData.TaskContent}}
+</view>
+<block wx:if="{{item.TaskState=='未完成'}}">
+    <view>
+      <button bindtap="click" data-value="{{item._id}}">完成此单</button>
+    </view>
+  </block>
+
+
+</view>

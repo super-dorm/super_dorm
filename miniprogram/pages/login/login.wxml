@@ -1,0 +1,35 @@
+<!--pages/login/login.wxml-->
+<view class="v1" style="height: {{clientHeight?clientHeight+'px':'auto'}}; position: absolute; left: 0rpx; top: 240rpx">
+ <!-- v2父容器  子view使用绝对布局 -->
+   <view class="v2">
+     <view class="dltext" style="width: 232rpx; height: 80rpx; display: block; box-sizing: border-box; left: 0rpx; top: -2rpx">登录</view>
+  
+     <!-- 手机号 -->
+     <view class="phoneCs">
+       <input placeholder="请输入账号" type="number" bindinput="content" />
+     </view>
+     <!-- 密码 -->
+     <view class="passwordCs">
+       <input placeholder="请输入密码" type="password" 
+       bindinput="password" />
+   </view>
+   <view>
+ 
+</view>
+  </view><button class="button"	type="primary" bindtap='login'>确认登陆</button>
+  <button class="button"	type="primary" bindtap='zhuce' style="position: relative; left: -3rpx; top: 80rpx">注册</button>
+  <text>\n</text>
+<!-- <radio-group bindchange="radioChange" >
+  <label  wx:for="{{items}}" wx:key="{{item.value}}">
+     <view class="weui-cell__hd">
+      <radio value="{{item.value}}" checked="true" />
+    </view>
+    <view class="weui-cell__bd">{{item.name}}</view>
+  </label>
+</radio-group> -->
+
+
+
+<view>
+  
+</view></view>

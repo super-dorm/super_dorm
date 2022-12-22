@@ -1,0 +1,5 @@
+<form bindsubmit="btnSub" style="position: relative; left: 0rpx; top: 92rpx">
+    <input class="input" name="title" placeholder="请输入标题" style="width: 750rpx; height: 48rpx; display: block; box-sizing: border-box; position: relative; left: 74rpx; top: 381rpx" focus="{{ false }}"></input>
+    <textarea class="input" name="content" placeholder="请输入内容" style="position: relative; left: 75rpx; top: 518rpx" focus="{{ false }}"></textarea>
+    <button type="primary" form-type="submit" style="position: relative; left: 0rpx; top: 518rpx">提交</button>
+</form>

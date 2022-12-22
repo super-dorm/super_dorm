@@ -1,0 +1,33 @@
+<!--pages/ayi/chongdianchuli.wxml-->
+
+<view wx:for="{{description}}" wx:for-item="item" class="list">
+  <view>
+    {{index}}: {{item.State}}
+  </view>
+  <view class="aaa">
+    <text class="time">订单详情：</text>
+    <view>
+      <view>
+        宿舍号：{{item.DormNum}}
+      </view>
+      <view>
+        充值金额：{{item.Amount}}
+      </view>
+    </view>
+
+
+
+
+  </view>
+  <view class="time">
+    发布时间：{{item.OrderTime}}
+  </view>
+
+  <block wx:if="{{item.State=='未充电'}}">
+    <view>
+      <button bindtap="click" data-value="{{item._id}}">充电</button>
+    </view>
+  </block>
+
+
+</view>
